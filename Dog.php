@@ -1,7 +1,8 @@
 <?php
+require_once "HasHome.php";
 require_once "Animal.php";
 
-class Dog extends Animal {
+class Dog extends Animal implements HasHome {
 
 	public function __construct($name) {
 		parent::__construct($name);
@@ -10,4 +11,9 @@ class Dog extends Animal {
 	public function say() {
 		echo "woof-woof!";
 	}
+
+    public function home()
+    {
+        echo "The big red house";
+    }
 }

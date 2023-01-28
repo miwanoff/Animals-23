@@ -7,5 +7,6 @@ foreach ($arr as $value) {
 	if ($value instanceof Animal){
 		print($value->getName()." say:\n");
 		print($value->say()."\n");
+        print($value->home()."\n");
 	}
 }
